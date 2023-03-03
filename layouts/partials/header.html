@@ -6,6 +6,8 @@
         href="{{ .Site.BaseURL }}"
         aria-label="{{ .Site.Title }} home page"
       >
+      {{ partial "three.html" . }}
+        <!--
         {{ with .Site.Params.navTitleText }}
           <h1>{{ . }}</h1>
         {{ else }}
@@ -14,6 +16,7 @@
             alt="{{ .Site.Params.logoAlt | default "Logo" }}"
           >
         {{ end }}
+        -->
       </a>
       <p class="library-desc">
         {{ with .Site.Params.description }} {{ . | markdownify }} {{ end }}
