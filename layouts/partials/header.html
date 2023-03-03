@@ -7,6 +7,9 @@
         aria-label="{{ .Site.Title }} home page"
       >
       {{ partial "three.html" . }}
+      {{ with .Site.Params.navTitleText }}
+        <a class="nav-title-text">{{ . }}</a>
+      {{ end }}
         <!--
         {{ with .Site.Params.navTitleText }}
           <h1>{{ . }}</h1>
