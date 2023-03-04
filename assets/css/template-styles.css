@@ -497,6 +497,11 @@ caption {
     font-size: 0.85rem;
 }
 
+.reading-time {
+    margin-top: 0;
+    font-size: 0.85rem;
+}
+
 /* Notes and warnings */
 .note {
     border-left: 0.5rem solid;

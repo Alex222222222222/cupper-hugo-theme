@@ -18,7 +18,11 @@
         {{ end }}
       {{ end }}
     </div>
-
+    
+    <div class="reading-time">
+      <strong>Reading time:</strong> {{ .ReadingTime }} minute{{ if (ne .ReadingTime 1) }}s{{ end }}
+    </div>
+    
     {{ with .Params.tags }}
       <div class="tags">
         <strong>{{ T "tags" }} </strong>
