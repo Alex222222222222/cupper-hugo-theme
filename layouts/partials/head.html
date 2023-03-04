@@ -52,6 +52,10 @@
   <link rel="stylesheet" href="{{ "css/prism.css" | relURL }}" media="none" onload="this.media='all';">
   <link rel="stylesheet" href="{{ "css/experience.css" | relURL }}" media="none" onload="this.media='all';">
 
+  {{ if eq .Site.Params.experience.enableExperience true }}
+    <script type="module" src="/third-party/experience.js"></script>
+  {{ end }}
+
   {{ $templateStyles := resources.Get "css/template-styles.css" }}
   {{ $styles := $templateStyles | resources.ExecuteAsTemplate "css/styles.css" . }}
   <link rel="stylesheet" type="text/css" href="{{ $styles.RelPermalink }}">
@@ -65,4 +69,24 @@
     {{ $title = .Site.Title }}
   {{ end }}
   <title>{{ $title }}</title>
+
+  <!-- put experience argument-->
+  {{ if eq .Site.Params.experience.enableExperience true }}
+    <div class="experience-arguments" id="experience-arguments"
+      {{ with .Site.Params.experience.innerHeight }}
+        innerHeight={{ . }}
+      {{ end }}
+      {{ with .Site.Params.experience.innerWidth }}
+        innerWidth={{ . }}
+      {{ end }}
+      {{ with .Site.Params.experience.pNum }}
+        pNum={{ . }}
+      {{ end }}
+      {{ with .Site.Params.experience.qNum }}
+        qNum={{ . }}
+      {{ end }}
+    >
+      
+    </div>
+  {{ end }}
 </head>
