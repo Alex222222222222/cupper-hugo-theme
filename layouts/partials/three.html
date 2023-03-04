@@ -8,9 +8,9 @@
       //  for the simplest examples. Such is progress?
       //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
-      import * as THREE from './third-party/three.module.js'
-      import Stats from './third-party/stats.module.js'
-      import { GUI } from './third-party/dat.gui.module.js'
+      import * as THREE from '/third-party/three.module.js'
+      import Stats from '/third-party/stats.module.js'
+      import { GUI } from '/third-party/dat.gui.module.js'
 
       //////////////////
       //              //
@@ -210,11 +210,21 @@
       //          //
       //////////////
 
+      if (document.getElementById("experience").childElementCount == 0) {
+            setupThree()
+            setupCornellBox()
+            setupContent()
+            loop()
+      } else {
+            console.log("Experience already exists")
+      }
 
+      /*
       window.addEventListener( 'DOMContentLoaded', function(){
             setupThree()
             setupCornellBox()
             setupContent()
             loop()
       })
+      */
 </script>
