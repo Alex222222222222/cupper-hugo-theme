@@ -55,6 +55,11 @@
   {{ if eq .Site.Params.experience.enableExperience true }}
     <script type="module" src="/third-party/experience.js"></script>
   {{ end }}
+  {{ with .Site.GoogleAnalytics }}
+    <!-- Google tag (gtag.js) -->
+    <script async src={{ print "https://www.googletagmanager.com/gtag/js?id=" . }}></script>
+    <script type="module" src="/third-party/gtag.js"></script>
+  {{ end }}
 
   {{ $templateStyles := resources.Get "css/template-styles.css" }}
   {{ $styles := $templateStyles | resources.ExecuteAsTemplate "css/styles.css" . }}
@@ -88,5 +93,10 @@
     >
       
     </div>
+  {{ end }}
+  {{ with .Site.GoogleAnalytics }}
+    <div class="experience-arguments" id="gtag-arguments"
+      gtag-id = {{ . }}
+    ></div>
   {{ end }}
 </head>
