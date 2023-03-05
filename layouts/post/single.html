@@ -7,6 +7,8 @@
       {{ .Title }}
     </h1>
 
+    {{ partial "share-buttons.html" }}
+
     <div class="date">
       {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
       {{ $publishDate := .PublishDate }}
