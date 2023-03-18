@@ -55,6 +55,9 @@
   {{ if eq .Site.Params.experience.enableExperience true }}
     <script type="module" src="/third-party/experience.js"></script>
   {{ end }}
+  {{ if eq .Site.Params.viewCounter.enable true }}
+    <script type="module" src="/third-party/view-counter.js"></script>
+  {{ end }}
   {{ with .Site.GoogleAnalytics }}
     <!-- Google tag (gtag.js) -->
     <script async src={{ print "https://www.googletagmanager.com/gtag/js?id=" . }}></script>
@@ -91,9 +94,27 @@
         qNum={{ . }}
       {{ end }}
     >
-      
     </div>
   {{ end }}
+
+  {{ if eq .Site.Params.viewCounter.enable true }}
+  <div id="view-counter-params" class="view-counter-params"
+    {{ with .Site.Params.viewCounter.baseURL }}
+        baseURL={{ . }}
+    {{ end }}
+    {{ with .Site.Params.viewCounter.enable }}
+        enable={{ . }}
+    {{ end }}
+    {{ with .Site.Params.viewCounter.password }}
+        password={{ . }}
+    {{ end }}
+    {{ with .Site.Params.viewCounter.username }}
+        username={{ . }}
+    {{ end }}
+  >
+  </div>
+  {{ end }}
+
   {{ with .Site.GoogleAnalytics }}
     <div class="experience-arguments" id="gtag-arguments"
       gtag-id = {{ . }}

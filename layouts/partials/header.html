@@ -26,6 +26,7 @@
       </p>
     </div>
     {{ partial "nav.html" . }}
+
     {{ if eq .Site.Params.moveFooterToHeader true }}
       {{ partial "footer.html" . }}
     {{ end }}

@@ -11,4 +11,7 @@
   {{ with .Site.Params.footer }}
     {{ . | markdownify }}
   {{ end }}
+  {{ if eq .Site.Params.viewCounter.enable true }}
+    {{ partial "view-counter.html" }}
+  {{ end }}
 </footer>

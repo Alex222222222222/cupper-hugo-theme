@@ -6,3 +6,33 @@
 .experience-arguments {
       display: none;
 }
+
+/* right align the view counter */
+.view-counter-first {
+      width: 60%;
+      text-align: right;
+      border: none;
+}
+
+.view-counter-second {
+      text-align: left;
+      border: none;
+}
+
+.view-counter-table {
+      border-collapse: collapse;
+      border: none;
+}
+
+.view-counter-table .tbody {
+      border-collapse: collapse;
+      border: none;
+}
+
+.view-counter{
+      border-radius: 25px;
+      border: 2px solid;
+      padding: 20px; 
+      margin-left: 70px;
+      margin-right: 70px;
+}
