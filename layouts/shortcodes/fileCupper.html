@@ -1,0 +1,6 @@
+{{ $file := .Get "file" }}
+{{ $caption := .Get "caption" }}
+
+{{ $original := .Page.Resources.GetMatch (printf "*%s*" $file) }}
+
+<a href="{{ $original.RelPermalink }}">{{ $caption | markdownify }}</a>
