@@ -236,19 +236,15 @@ main ul,
 main ol {
     margin-left: 2.25rem;
 }
-/*
 main li + li {
     margin-top: 0.5rem;
 }
-*/
 main ul ul, main ol ol {
     margin-top: 0.5rem;
 }
-/*
 main li ul, main li ol {
     margin-top: 0.5rem;
 }
-*/
 ol ol {
   list-style: lower-latin;
 }
