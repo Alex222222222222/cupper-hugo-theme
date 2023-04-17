@@ -30,8 +30,62 @@ body {
 template {
   display: none !important;
 }
+/*
 * + * {
     margin-top: 2.25rem;
+}
+*/
+ul + p {
+    margin-top: 0.75rem;
+}
+ul + div {
+    margin-top: 0.75rem;
+}
+p + blockquote {
+    margin-top: 0.75rem;
+}
+blockquote + p {
+    margin-top: 0.75rem;
+}
+blockquote + div {
+    margin-top: 0.75rem;
+}
+blockquote + ul {
+    margin-top: 0.75rem;
+}
+blockquote + ol {
+    margin-top: 0.75rem;
+}
+blockquote + blockquote {
+    margin-top: 0.75rem;
+}
+blockquote + h1 {
+    margin-top: 0.75rem;
+}
+blockquote + figure {
+    margin-top: 0.75rem;
+}
+p + div {
+    margin-top: 0.75rem;
+}
+div + p {
+    margin-top: 0.75rem;
+}
+p + figure {
+    margin-top: 0.75rem;
+}
+figure + p {
+    margin-top: 0.75rem;
+}
+div + figure {
+    margin-top: 0.75rem;
+}
+figure + div {
+    margin-top: 0.75rem;
+}
+#search {
+    margin-bottom: 0.75em;
+    margin-top: 0.75em;
 }
 br,
 dt,
@@ -182,12 +236,19 @@ main ul,
 main ol {
     margin-left: 2.25rem;
 }
+/*
 main li + li {
     margin-top: 0.5rem;
 }
-main ul ul, main ol ol, main li ul, main li ol {
+*/
+main ul ul, main ol ol {
     margin-top: 0.5rem;
 }
+/*
+main li ul, main li ol {
+    margin-top: 0.5rem;
+}
+*/
 ol ol {
   list-style: lower-latin;
 }
@@ -370,6 +431,11 @@ caption {
     margin-top: 4rem;
     text-align: center;
 }
+#view-counter {
+    font-size: 0.85rem;
+    margin-top: 1rem;
+    text-align: center;
+}
 
 /* Patterns navigation */
 .patterns {
@@ -436,8 +502,9 @@ caption {
     border: 1px solid;
     padding: 1.5rem;
 }
-.toc nav {
+.toc {
   margin-top: 1rem;
+  margin-bottom: 1em;
 }
 .toc ol {
     margin-left: 0.75rem;
