@@ -1,37 +1,31 @@
-⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
-
-**WARNING:** This repo is no longer maintained. It's archived and read-only.
-
-⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
-
 # Cupper
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bc8c4e51-37ee-419d-ad4f-b378010ee546/deploy-status)](https://app.netlify.com/sites/cupper-hugo-theme/deploys)
-
-An accessibility-friendly Hugo theme, ported from the [original Cupper](https://github.com/ThePacielloGroup/cupper) project.
+An accessibility-friendly Hugo theme, ported from the original [Cupper](https://github.com/ThePacielloGroup/cupper) project also second [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme).
 
 ## Table of contents
 
 <!-- toc -->
 
-- [Demo](#demo)
-- [Minimum Hugo version](#minimum-hugo-version)
-- [Installation](#installation)
-- [Updating](#updating)
-- [Run example site](#run-example-site)
-- [Configuration](#configuration)
-- [Nav Title or Logo](#nav-title-or-logo)
-- [Favicons](#favicons)
-- [Shortcodes](#shortcodes)
-- [Syntax highlighting](#syntax-highlighting)
-- [Enable Table of Contents for a Blog Post](#enable-table-of-contents-for-a-blog-post)
-- [Localization](#localization)
-- [Custom CSS and JS](#custom-css-and-js)
-- [Default to Dark Theme](#default-to-dark-theme)
-- [Enable utterances](#enable-utterances)
-- [Non-Git Repo](#non-git-repo)
-- [Getting help](#getting-help)
-- [Credits](#credits)
+- [Cupper](#cupper)
+  - [Table of contents](#table-of-contents)
+  - [Demo](#demo)
+  - [Minimum Hugo version](#minimum-hugo-version)
+  - [Installation](#installation)
+  - [Updating](#updating)
+  - [Run example site](#run-example-site)
+  - [Configuration](#configuration)
+  - [Nav Title or Logo](#nav-title-or-logo)
+  - [Favicons](#favicons)
+  - [Shortcodes](#shortcodes)
+  - [Syntax highlighting](#syntax-highlighting)
+  - [Enable Table of Contents for a Blog Post](#enable-table-of-contents-for-a-blog-post)
+  - [Localization](#localization)
+  - [Custom CSS and JS](#custom-css-and-js)
+  - [Default to Dark Theme](#default-to-dark-theme)
+  - [Enable utterances](#enable-utterances)
+  - [Non-Git Repo](#non-git-repo)
+  - [Getting help](#getting-help)
+  - [Credits](#credits)
 
 <!-- tocstop -->
 
