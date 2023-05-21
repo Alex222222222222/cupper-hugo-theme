@@ -120,4 +120,8 @@
       gtag-id = {{ . }}
     ></div>
   {{ end }}
+
+  {{ with .Site.Params.GoogleSiteVerification }}
+    <meta name="google-site-verification" content={{ . }} />
+  {{ end }}
 </head>
